@@ -8,3 +8,64 @@ a) Para actualizar el repositorio hay que seguir una serie de pasos:
 b) Solo se lo puede actualizar si copia el codigo del fork de Gamma
 c) Solo se lo puede actualizar si copia el codigo del fork de Alfa 
 d) No, Los datos que tenia uno se guardan aunque actualize el fork
+
+e) 
+MARKO AYALA (BETA)
+# Crear repositorio en GitHub (interfaz web)
+# Luego clonar en local:
+git clone https://github.com/Marko171123/TP_SO_i2_Equipo.git
+cd TP_SO_i2_Equipo
+# Crear archivo fork.txt
+echo "Datos iniciales" > fork.txt
+# Agregar y hacer commit
+git add fork.txt README.md
+git commit -m "Marko Ayala - Repo inicial con README y fork.txt"
+# Subir a GitHub
+git push origin main
+TOBIAS ARTAL (ALFA)
+# Hacer fork en GitHub desde repo de Marko Ayala
+# Clonar su fork
+git clone https://github.com/AlfaUser/TP_SO_i2_Equipo.git
+cd TP_SO_i2_Equipo
+# Editar fork.txt con sus datos
+vim fork.txt
+# Guardar cambios y commit
+git add fork.txt
+git commit -m "Tobias Artal - agrega sus datos a fork.txt"
+# Subir cambios al fork remoto
+git push origin main
+MARKO AYALA (BETA)
+# Clonar o actualizar localmente su repo original
+git clone https://github.com/Marko171123/TP_SO_i2_Equipo.git
+cd TP_SO_i2_Equipo
+# Crear archivo NuevoDato.txt
+echo "Información adicional" > NuevoDato.txt
+# Agregar y commitear
+git add NuevoDato.txt
+git commit -m "Marko Ayala - agrega NuevoDato.txt"
+# Subir a repo remoto
+git push origin main
+TOBIAS ARTAL (ALFA)
+# En el repositorio local de ALFA o GAMMA
+# Agregar repo original de Marko como upstream (una sola vez)
+git remote add upstream https://github.com/Marko171123/TP_SO_i2_Equipo.git
+# Traer los cambios del repo original
+git fetch upstream
+# Fusionar cambios a la rama main local
+git merge upstream/main
+# Resolver conflictos si los hay, guardar y commitear
+# Subir cambios a su fork remoto
+git push origin main
+Marko Ayala (BETA): agrega respuestas A), B) , c) Y d)
+Tobias Artal (ALFA): agrega respuesta e) (este listado de comandos paso a paso).
+# Editar archivo respuesta_I2_EquipoX.txt
+vim respuesta_I2_EquipoX.txt
+# Agregar respuestas correspondientes
+# Guardar y commitear
+git add respuesta_I2_EquipoX.txt
+git commit -m "Agrega respuestas (según integrante)"
+# Subir a su repositorio
+git push origin main
+
+
+
