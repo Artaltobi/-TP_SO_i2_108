@@ -1,0 +1,10 @@
+Ayala Marko
+Artal Tobias
+a) Para actualizar el repositorio hay que seguir una serie de pasos:
+	1. git remote add upstream (Codigo del repositorio al cual quiero actualizar)
+	2. git fetch upstream
+	3. git merge upstream/main
+	4. git push
+b) Solo se lo puede actualizar si copia el codigo del fork de Gamma
+c) Solo se lo puede actualizar si copia el codigo del fork de Alfa 
+d) No, Los datos que tenia uno se guardan aunque actualize el fork
